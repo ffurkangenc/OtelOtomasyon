@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtelOtomasyon.Domain.Enums
 {
-    public enum OdaDurumu
+    public enum RoomStatus
     {
         Available = 1,
         Occupied = 2,
