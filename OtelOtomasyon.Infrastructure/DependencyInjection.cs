@@ -16,6 +16,12 @@ namespace OtelOtomasyon.Infrastructure
         {
             services.AddScoped<IAppDbContext, AppDbContext>();
             services.AddScoped<IRoomService, RoomService>();
+            services.AddScoped<IGuestService, GuestService>();
+            services.AddScoped<ITableService, TableService>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IInvoiceService, InvoiceService>();
+            services.AddScoped<IReservationService, ReservationService>();
+
             return services;
         }
     }

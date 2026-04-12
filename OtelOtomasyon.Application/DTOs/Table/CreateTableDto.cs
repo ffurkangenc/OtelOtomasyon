@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OtelOtomasyon.Application.DTOs.Table
+{
+    public class CreateTableDto
+    {
+        public string TableNumber { get; set; }
+        public int Capacity { get; set; }
+
+    }
+}
