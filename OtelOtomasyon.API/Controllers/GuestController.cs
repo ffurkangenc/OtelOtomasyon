@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OtelOtomasyon.Application.DTOs.Guest;
 using OtelOtomasyon.Application.Interfaces;
@@ -8,6 +9,7 @@ namespace OtelOtomasyon.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class GuestController : ControllerBase
     {
         private readonly IGuestService _guestService;

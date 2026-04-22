@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OtelOtomasyon.Application.DTOs.Invoice;
 using OtelOtomasyon.Application.Services;
@@ -7,6 +8,7 @@ namespace OtelOtomasyon.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class InvoiceController : ControllerBase
     {
         private readonly InvoiceService _invoiceService;

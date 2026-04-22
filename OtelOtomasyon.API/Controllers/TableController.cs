@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OtelOtomasyon.Application.DTOs.Table;
 using OtelOtomasyon.Application.Interfaces;
@@ -7,6 +8,7 @@ namespace OtelOtomasyon.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TableController : ControllerBase
     {
         private readonly ITableService _tableService;

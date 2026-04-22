@@ -21,6 +21,7 @@ namespace OtelOtomasyon.Infrastructure
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IInvoiceService, InvoiceService>();
             services.AddScoped<IReservationService, ReservationService>();
+            services.AddScoped<IAuthService, AuthService>();
 
             return services;
         }
